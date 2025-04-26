@@ -1,0 +1,12 @@
+name: Notify Infra via Reusable Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-notify:
+    uses: lawrenceslng/DevOps_Final_Infrastructure/.github/workflows/notify-infra-reusable.yaml@main
+    with:
+      version_path: VERSION
